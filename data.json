@@ -1,0 +1,72 @@
+{
+    "films": [
+        {
+            "name": "Harry Potter and the Philosopher's Stone",
+            "description": "Harry Potter and the Philosopher's Stone (also known as Harry Potter and the Sorcerer's Stone in the United States) is a 2001 fantasy film directed by Chris Columbus and produced by David Heyman, from a screenplay by Steve Kloves, based on the 1997 novel of the same name by J. K. Rowling. It is the first instalment in the Harry Potter film series. The film stars Daniel Radcliffe as Harry Potter, with Rupert Grint as Ron Weasley, and Emma Watson as Hermione Granger. Its story follows Harry's first year at Hogwarts School of Witchcraft and Wizardry as he discovers that he is a famous wizard and begins his formal wizarding education.",
+            "rating": 7.1,
+            "genre": "Fantasy",
+            "actors": [
+                "Daniel Radcliffe",
+                "Rupert Grint",
+                "Emma Watson",
+                "John Cleese",
+                "Robbie Coltrane",
+                "Warwick Davis",
+                "Richard Griffiths",
+                "Richard Harris",
+                "Ian Hart",
+                "John Hurt",
+                "Alan Rickman",
+                "Fiona Shaw",
+                "Maggie Smith",
+                "Julie Walters"
+            ],
+            "poster": "https://upload.wikimedia.org/wikipedia/en/7/7a/Harry_Potter_and_the_Philosopher%27s_Stone_banner.jpg"
+        },
+        {
+            "name": "Garfield: The Movie",
+            "description": "Garfield: The Movie is a 2004 American comedy film based on Jim Davis' comic strip Garfield. Directed by Peter Hewitt and written by Joel Cohen and Alec Sokolow, it stars Breckin Meyer as Jon Arbuckle, Jennifer Love Hewitt as Dr. Liz Wilson and features Bill Murray as the voice of Garfield, who was created with computer-generated imagery.",
+            "rating": 3.52,
+            "genre": "Fantasy",
+            "actors": [
+                "Breckin Meyer",
+                "Jennifer Love Hewitt",
+                "Stephen Tobolowsky",
+                "Bill Murray"
+            ],
+            "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Garfield_ver6.jpg/220px-Garfield_ver6.jpg"
+        },
+        {
+            "name": "Fantastic Beasts and Where to Find Them",
+            "description": "Fantastic Beasts and Where to Find Them is a 2016 fantasy film directed by David Yates and written by J. K. Rowling, inspired by her 2001 guide book of the same name. It is a spin-off and prequel to the Harry Potter film series. The film stars Eddie Redmayne as Newt Scamander, a magizoologist who arrives in New York City in 1926 with a magical suitcase containing fantastic creatures that soon escape and cause chaos in the wizarding world.",
+            "rating": 7.2,
+            "genre": "Fantasy",
+            "actors": [
+                "Eddie Redmayne",
+                "Katherine Waterston",
+                "Dan Fogler",
+                "Alison Sudol",
+                "Colin Farrell",
+                "Ezra Miller",
+                "Samantha Morton",
+                "Jon Voight",
+                "Johnny Depp"
+            ],
+            "poster": "https://s3.vcdn.biz/static/f/869024541/image.jpg"
+        },
+        {
+            "name": "28 Years Later",
+            "description": "28 Years Later is a 2025 post-apocalyptic horror film directed by Danny Boyle and written by Alex Garland. It is the third installment in the franchise that began with *28 Days Later*. Set nearly three decades after the original outbreak of the Rage virus, the story follows survivors living on an isolated island who are forced to return to the mainland, where the world has evolved into something far more dangerous and unpredictable.",
+            "rating": 6.6,
+            "genre": "Post-apocalyptic / Horror",
+            "actors": [
+                "Jodie Comer",
+                "Aaron Taylor-Johnson",
+                "Jack O'Connell",
+                "Alfie Williams",
+                "Ralph Fiennes"
+            ],
+            "poster": "https://upload.wikimedia.org/wikipedia/ru/3/38/28_%D0%BB%D0%B5%D1%82_%D1%81%D0%BF%D1%83%D1%81%D1%82%D1%8F.jpg"
+        }
+    ]
+}

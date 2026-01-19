@@ -1,0 +1,196 @@
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'echo_handler'
+INFO:aiogram.event:Update id=580970516 is handled. Duration 325 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970517 is handled. Duration 326 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970518 is handled. Duration 82 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970519 is handled. Duration 171 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970520 is handled. Duration 76 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'filter_movies'
+INFO:aiogram.event:Update id=580970521 is handled. Duration 152 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'get_filter_criteria'
+INFO:aiogram.event:Update id=580970522 is handled. Duration 381 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'film_create'
+INFO:aiogram.event:Update id=580970523 is handled. Duration 164 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_name'
+INFO:aiogram.event:Update id=580970524 is handled. Duration 96 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_description'
+INFO:aiogram.event:Update id=580970525 is handled. Duration 189 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_rating'
+INFO:aiogram.event:Update id=580970526 is handled. Duration 81 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_genre'
+INFO:aiogram.event:Update id=580970527 is handled. Duration 92 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_actors'
+INFO:aiogram.event:Update id=580970528 is handled. Duration 80 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'film_poster'
+INFO:aiogram.event:Update id=580970529 is handled. Duration 97 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970530 is handled. Duration 139 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970531 is handled. Duration 164 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970532 is handled. Duration 188 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970533 is handled. Duration 191 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970534 is not handled. Duration 76 ms by bot id=8265313495
+ERROR:aiogram.event:Cause exception while process update id=580970534 by bot id=8265313495
+TelegramBadRequest: Telegram server says - Bad Request: wrong type of the web page content
+Traceback (most recent call last):
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\external.py", line 17, in wrapper
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\bot.py", line 271, in callb_film
+    await callback.message.answer_photo(
+    ...<2 lines>...
+    )
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 177, in make_request
+    response = self.check_response(
+        bot=bot,
+    ...<2 lines>...
+        content=raw_result,
+    )
+  File "C:\Users\ANNA ROMANIVNA\OneDrive\Desktop\Telegram_bot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: wrong type of the web page content
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970535 is handled. Duration 104 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970536 is handled. Duration 237 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970537 is handled. Duration 1179 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970538 is handled. Duration 298 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970539 is handled. Duration 79 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970540 is handled. Duration 219 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970541 is handled. Duration 1324 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970542 is handled. Duration 192 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970543 is handled. Duration 89 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970544 is handled. Duration 788 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970545 is handled. Duration 108 ms by bot id=8265313495
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8265313495)
+INFO:aiogram.dispatcher:Polling stopped for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @Rjsosln_bot id=8265313495 - 'Room bot'
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970546 is handled. Duration 210 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970547 is handled. Duration 88 ms by bot id=8265313495
+INFO:external:unknown call 'callb_film'
+INFO:aiogram.event:Update id=580970548 is handled. Duration 113 ms by bot id=8265313495
+INFO:aiogram.event:Update id=580970549 is handled. Duration 79 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'films'
+INFO:aiogram.event:Update id=580970550 is handled. Duration 89 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'command_start_handler'
+INFO:aiogram.event:Update id=580970551 is handled. Duration 97 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'get_delete_query'
+INFO:aiogram.event:Update id=580970552 is handled. Duration 106 ms by bot id=8265313495
+INFO:external:Overdose_179 call 'echo_handler'
+INFO:aiogram.event:Update id=580970553 is handled. Duration 86 ms by bot id=8265313495
